@@ -1,0 +1,224 @@
+:root {
+    --angular: #dd0031;
+    --react: #61dafb;
+    --vue: #42b883;
+    --dark: #1a1a1a;
+    --neon: #00ff9d;
+}
+
+.hero {
+    height: 70vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+.card {
+    background: rgba(255,255,255,0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,0.2),
+        transparent
+    );
+    transition: 0.5s;
+}
+
+.card:hover::before {
+    left: 100%;
+}
+
+.angular { box-shadow: 0 0 30px -5px var(--angular); }
+.react { box-shadow: 0 0 30px -5px var(--react); }
+.vue { box-shadow: 0 0 30px -5px var(--vue); }
+
+.framework-3d {
+    width: 200px;
+    height: 200px;
+    margin: -50px auto 20px;
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.3));
+    transition: transform 0.5s;
+}
+
+.card:hover .framework-3d {
+    transform: translateY(-10px) rotate(15deg);
+}
+
+.btn-glow {
+    background: none;
+    border: 2px solid;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: 700;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.btn-glow::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        45deg,
+        transparent,
+        rgba(255,255,255,0.3),
+        transparent
+    );
+    transform: rotate(45deg);
+    transition: 0.5s;
+}
+
+.angular .btn-glow { border-color: var(--angular); color: var(--angular); }
+.react .btn-glow { border-color: var(--react); color: var(--react); }
+.vue .btn-glow { border-color: var(--vue); color: var(--vue); }
+
+.btn-glow:hover {
+    box-shadow: 0 0 20px;
+    transform: translateY(-3px);
+}
+
+.comparison-orb {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background: var(--neon);
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 30px var(--neon);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+/* Стили для нового блока */
+.courses-intro {
+    padding: 4rem 0;
+    background: linear-gradient(45deg, var(--dark), #2A5C82);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.info-panel {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.info-panel h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.highlight {
+    color: var(--neon);
+    font-weight: 700;
+}
+
+.filters {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.filter-tag {
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    background: rgba(255,255,255,0.1);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.filter-tag.active {
+    background: var(--neon);
+    color: var(--dark);
+    font-weight: 600;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 1rem;
+}
+
+.stat-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--neon);
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* Анимации */
+@keyframes gradientFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.courses-intro {
+    background-size: 200% 200%;
+    animation: gradientFlow 10s ease infinite;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diasoft Education - Контакты</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+     <!-- Модальное окно авторизации -->
+    <div class="modal" id="authModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Вход в систему</h2>
+            <form id="loginForm">
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Пароль" required>
+                <button type="submit" class="btn btn-primary">Войти</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Шапка -->
+    <header class="header">
+        <nav class="container header-nav">
+            <a href="/" class="logo">
+                <span class="logo-primary">Diasoft</span>
+                <span class="logo-secondary">Education</span>
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Главная</a></li>
+                <li><a href="#courses" class="nav-link">Курсы</a></li>
+                <li><a href="/src/pages/about.html" class="nav-link">О нас</a></li>
+                <li><a href="/src/pages/contact.html" class="nav-link">Контакты</a></li>
+            </ul>
+            
+            <div class="auth-buttons">
+                <button class="btn btn-login">Войти</button>
+                <button class="btn btn-primary">Регистрация</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Секция с контактами -->
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Левый блок: Текст -->
+                    <div class="contact-info">
+                        <h1>Свяжитесь с нами</h1>
+                        <p class="contact-description">
+                            Мы открыты для сотрудничества и всегда готовы ответить 
+                            на ваши вопросы в рабочее время (Пн-Пт, 9:00–18:00).
+                        </p>
+
+                        <div class="contact-details">
+                            <div class="detail-item">
+                                <h3>Адрес офиса</h3>
+                                <p>Полковая ул., 3, стр. 14<br>Москва, 127018</p>
+                                <p class="metro">🚇 Савёловская (5 минут пешком)</p>
+                            </div>
+
+                            <div class="detail-item">
+                                <h3>Электронная почта</h3>
+                                <p><a href="mailto:contact@diasoft.education">contact@diasoft.education</a></p>
+                            </div>
+
+                            <div class="detail-item">
+                                <h3>Телефон</h3>
+                                <p><a href="tel:+74951234567">+7 (495) 123-45-67</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Правый блок: Форма -->
+                    <div class="contact-form">
+                        <form class="modern-form">
+                            <div class="form-group">
+                                <input type="text" placeholder="Имя" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Email" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="Сообщение" rows="6" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary">Отправить сообщение</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция с картой -->
+        <section class="map-section">
+            <div class="map-container">
+    <iframe 
+        src="https://yandex.ru/map-widget/v1/?ll=37.589887%2C55.796898&z=17&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjczNjg3ORJQ0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAsINCf0L7Qu9C-0LLQvtC60LAg0YPQu9C40YbQsCwgMyDRg9C7Liwg0YHRgtGA0L7QutGD0YfQtdC90LrQsCAxNCIKDbHkTkIVh8pWQg%3D%3D&from=mapframe" 
+        allowfullscreen>
+    </iframe>
+</div>
+        </section>
+    </main>
+
+  <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Diasoft Education</h4>
+                    <p>© 2024 Все права защищены</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:support@diasoft-edu.ru">support@diasoft-edu.ru</a></li>
+                        <li><a href="tel:+74951234567">+7 (495) 123-45-67</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Ресурсы</h4>
+                    <ul class="footer-links">
+                        <li><a href="#docs">Документация</a></li>
+                        <li><a href="#blog">Блог</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/src/js/contact.js"></script>
+</body>
+</html>

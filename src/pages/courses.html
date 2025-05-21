@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фронтенд Мастерство - Diasoft Education</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="container header-nav">
+            <a href="/" class="logo">
+                <span class="logo-primary">Diasoft</span>
+                <span class="logo-secondary">Education</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="/" class="nav-link">Главная</a></li>
+                <li><a href="about.html" class="nav-link active">О нас</a></li>
+                <li><a href="courses.html" class="nav-link">Курсы</a></li>
+                <li><a href="contact.html" class="nav-link">Контакты</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <button class="btn btn-login">Войти</button>
+                <button class="btn btn-primary">Регистрация</button>
+            </div>
+        </nav>
+    </header>
+
+<section class="courses-intro">
+        <div class="container">
+            <div class="info-panel">
+                <h2 class="animate__animated animate__fadeIn">
+                    Выбери свой путь в разработке
+                    <span class="highlight">2024</span>
+                </h2>
+                <div class="filters">
+                    <div class="filter-tag active">Все курсы</div>
+                    <div class="filter-tag">Для начинающих</div>
+                    <div class="filter-tag">Продвинутый уровень</div>
+                    <div class="filter-tag">Сертификация</div>
+                </div>
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="stat-value">1500+</div>
+                        <div class="stat-label">Выпускников</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">98%</div>
+                        <div class="stat-label">Успешных проектов</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">24/7</div>
+                        <div class="stat-label">Поддержка</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <main>
+        <section class="cards-container">
+            <!-- Angular Card -->
+            <div class="card angular animate__animated" data-tilt>
+                <div class="card-glare"></div>
+                <img src="assets/angular-3d.png" class="framework-3d" alt="Angular">
+                <div class="card-content">
+                    <h2>Angular Pro</h2>
+                    <div class="duration">
+                        ⏳ 8 недель
+                        <div class="timeline">
+                            <div class="milestone" style="--pos: 20%">Основы</div>
+                            <div class="milestone" style="--pos: 50%">Продвинутые темы</div>
+                            <div class="milestone" style="--pos: 80%">Дипломный проект</div>
+                        </div>
+                    </div>
+                    <ul class="features">
+                        <li><span>⚡</span> TypeScript Мастерство</li>
+                        <li><span>🔋</span> RxJS & NgRx</li>
+                        <li><span>🧪</span> 150+ Практических задач</li>
+                    </ul>
+                    <button class="btn-glow">Начать обучение</button>
+                </div>
+            </div>
+
+            <!-- React Card -->
+            <div class="card react animate__animated" data-tilt>
+                <div class="card-glare"></div>
+                <img src="assets/react-3d.png" class="framework-3d" alt="React">
+                <div class="card-content">
+                    <h2>React Expert</h2>
+                    <div class="duration">
+                        ⏳ 6 недель
+                        <div class="timeline">
+                            <div class="milestone" style="--pos: 30%">Основы</div>
+                            <div class="milestone" style="--pos: 60%">Экосистема</div>
+                            <div class="milestone" style="--pos: 90%">Портфолио</div>
+                        </div>
+                    </div>
+                    <ul class="features">
+                        <li><span>⚛️</span> Hooks & Context API</li>
+                        <li><span>🚀</span> Next.js & SSR</li>
+                        <li><span>📱</span> React Native Основы</li>
+                    </ul>
+                    <button class="btn-glow">Начать обучение</button>
+                </div>
+            </div>
+
+            <!-- Vue Card -->
+            <div class="card vue animate__animated" data-tilt>
+                <div class="card-glare"></div>
+                <img src="assets/vue-3d.png" class="framework-3d" alt="Vue">
+                <div class="card-content">
+                    <h2>Vue Master</h2>
+                    <div class="duration">
+                        ⏳ 5 недель
+                        <div class="timeline">
+                            <div class="milestone" style="--pos: 25%">Основы</div>
+                            <div class="milestone" style="--pos: 60%">Продвинутое</div>
+                            <div class="milestone" style="--pos: 85%">Оптимизация</div>
+                        </div>
+                    </div>
+                    <ul class="features">
+                        <li><span>🌈</span> Composition API</li>
+                        <li><span>🛠️</span> Vuex & Vue Router</li>
+                        <li><span>⚡</span> Nuxt.js & Vite</li>
+                    </ul>
+                    <button class="btn-glow">Начать обучение</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+ <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Diasoft Education</h4>
+                    <p>© 2024 Все права защищены</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:support@diasoft-edu.ru">support@diasoft-edu.ru</a></li>
+                        <li><a href="tel:+74951234567">+7 (495) 123-45-67</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Ресурсы</h4>
+                    <ul class="footer-links">
+                        <li><a href="#docs">Документация</a></li>
+                        <li><a href="#blog">Блог</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.2/dist/vanilla-tilt.min.js"></script>
+    <script src="/src/js/courses.js"></script>
+</body>
+</html>
